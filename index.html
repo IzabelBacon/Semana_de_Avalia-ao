@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="banner">
+        <!-- Aqui você pode colocar o seu banner -->
+        <img src="banner.png" alt="Banner">
+    </div>
     <header>
         <nav class="navbar">
             <div class="logo">
@@ -27,8 +32,8 @@
                 <li><a href="#">Contatos</a></li>
             </ul>
             <div class="social-links">
-                <img src="instagramm.png" href="https://www.instagram.com" target="_blank" alt="Instagram"></a>
-                <img src="facebookk..png" href="https://www.facebook.com" target="_blank"alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="instagramm.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="facebookk..png" alt="Facebook"></a>
             </div>
         </nav>
     </header>
@@ -43,9 +48,9 @@
         <button class="next" onclick="moveCarousel(1)">&#10095;</button>
     </div>
 
-</div>
-<script src="script.js"></script>
-let currentIndex = 0;
+    <script src="script.js"></script>
+    <script>
+        let currentIndex = 0;
 
         function moveCarousel(direction) {
             const images = document.querySelector('.carousel-images');
@@ -61,5 +66,6 @@ let currentIndex = 0;
             const offset = -currentIndex * 100; // Move o carrossel
             images.style.transform = `translateX(${offset}%)`;
         }
+    </script>
 </body>
 </html>
