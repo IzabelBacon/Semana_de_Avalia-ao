@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<<<<<<< HEAD
     <!-- Cabeçalho -->
 <header>
     <div class="header-img">
@@ -18,75 +17,69 @@
     </ul>
     </nav>
     </header>
-=======
->>>>>>> 8f8c7dbff7e1f5ec70495d648e40ca0d193cc713
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana de Avaliação</title>
-
-    <!-- Link para a fonte Itim do Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-
-    <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Cabeçalho -->
     <header>
-        <div class="header-img">
-            <img src="bannerescola.png" alt="Paisagem Escola">
+            <div class="social-links">
+                <a href="https://www.instagram.com" target="_blank"><img src="instagramm.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="whatsappp.png" alt="Facebook"></a>
+            </div>
+        </nav>
+    </header><!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Semana de Avaliações</title><link href=link href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    </head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        
+    
+            <!-- Tabela de avaliações -->
+            <section class="schedule">
+                <h2>Semana de avaliações</h2>
+                <table>
+                    <thead>
+                        <tr>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </section>
         </div>
+    </body>
+    </html>
+    
+    
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="HORARIOS.png" alt="Imagem 1">
+    <script src="script.js"></script>
+    <script>
+        let currentIndex = 0;
 
-        <!-- Links para redes sociais -->
-        <div class="social-links">
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="instagramm.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="whatsappp.png" alt="Facebook">
-            </a>
-        </div>
-    </header>
+        function moveCarousel(direction) {
+            const images = document.querySelector('.carousel-images');
+            const totalImages = images.children.length;
+            currentIndex += direction;
 
-    <!-- Conteúdo principal -->
-    <div class="container">
+            if (currentIndex < 0) {
+                currentIndex = totalImages - 1; // Vai para a última imagem
+            } else if (currentIndex >= totalImages) {
+                currentIndex = 0; // Volta para a primeira imagem
+            }
+
             const offset = -currentIndex * 100; // Move o carrossel
-            images.style.transform = `translateX(${offset}%)`;
+            images.style.transform = translateX(${offset}%);
+        
     </script>
 </body>
-
-        <!-- Tabela de avaliações -->
-        <section class="schedule">
-            <h2>Semana de avaliações</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Hora</th>
-                        <th>Lunes</th>
-                        <th>Martes</th>
-                        <th>Miércoles</th>
-                        <th>Jueves</th>
-                        <th>Viernes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Linhas da tabela para horários -->
-                    <tr>
-                        <td>08:00 - 09:00</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <!-- Adicionar mais linhas conforme necessário -->
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Carrossel de imagens -->
-        <div class="carousel">
-            <div class="carousel-images">
-                <img src="HORARIOS.png" alt="Imagem
-
+}
