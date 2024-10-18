@@ -1,22 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Cabeçalho -->
-<header>
-    <div class="header-img">
-    <img src="paisagem.jpg" alt="Paisagem Escola">
-    </div>
-    </ul>
-    </nav>
-    </header>
-    <!-- Cabeçalho -->
-<header>
-    <div class="header-img">
-    <img src="bannerescola.png" alt="Paisagem Escola">
-    </div>
-    </ul>
-    </nav>
-    </header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semana de Avaliação</title>
@@ -34,9 +18,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Semana de Avaliações</title><link href=link href="https://fonts.googleapis.com/css2?family=Itim&display=swap">
-        <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    </head>
+        <title>Semana de Avaliações</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -62,6 +44,9 @@
     <div class="carousel">
         <div class="carousel-images">
             <img src="HORARIOS.png" alt="Imagem 1">
+        </div>
+        <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+
     <script src="script.js"></script>
     <script>
         let currentIndex = 0;
@@ -78,8 +63,8 @@
             }
 
             const offset = -currentIndex * 100; // Move o carrossel
-            images.style.transform = translateX(${offset}%);
-        
+            images.style.transform = `translateX(${offset}%)`;
+        }
     </script>
 </body>
-}
+</html>
